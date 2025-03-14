@@ -1,6 +1,9 @@
 import streamlit as st
 
 st.title("🎈 Aplikasi menghitung luas persegi panjang")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+panjang = st.number_input("Masukkan panjang (cm)")
+st.write("panjang= ", panjang)
+lebar = st.number_input("Masukkan lebar (cm)")
+st.write("lebar= ", lebar)
+luas=panjang*lebar
+st.write("Luas= ", luas)
